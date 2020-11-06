@@ -8,8 +8,6 @@ var emoji = require('node-emoji').emoji;
 const express = require('express');
 const app = express();
 const host = '0.0.0.0';
-
-/*
 const port = process.env.PORT || 3000;
 app.listen(port, host, function() {
   console.log("Server started.......");
@@ -39,9 +37,6 @@ setInterval(function() {
     console.log("1 record selected");
   });
 }, the_interval);
-
-*/
-
 
 var myData = [];
 
@@ -1179,4 +1174,4 @@ function insertToDB()
     console.log("1 record inserted");
   });
 }
-//bot.launch()
+bot.launch()
