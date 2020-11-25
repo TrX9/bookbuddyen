@@ -992,7 +992,7 @@ bot.action('match', (ctx) =>{
             else { age1 = "Under 18" }
             if(result[0].gender=="M"){gender1 = "Male"}
             else { gender1 = "Female" }
-            ctx.telegram.sendMessage(ctx.chat.id, emoji.green_book + emoji.closed_book + 'You have a match!! '+ emoji.closed_book + emoji.green_book + '\n\nYour match is @' + result[0].username +'  '+ emoji.arrow_left + emoji.arrow_left + '\nИмя: '+ result[0].name + '\nВозраст: '+ age1 +'\nПол: '+ gender1 +'\n Your matching score is: ' + scorepercentage + '%\n\n Нажмите на имя пользователя, чтобы начать беседу!',
+            ctx.telegram.sendMessage(ctx.chat.id, emoji.green_book + emoji.closed_book + 'You have a match!! '+ emoji.closed_book + emoji.green_book + '\n\nYour match is @' + result[0].username +'  '+ emoji.arrow_left + emoji.arrow_left + '\nИмя: '+ result[0].name + '\nВозраст: '+ age1 +'\nПол: '+ gender1 +'\n Your matching score is: ' + scorepercentage + '%\n\n Click on the username to start a conversation!',
             {
                 reply_markup: {
                 inline_keyboard: [
@@ -1003,7 +1003,7 @@ bot.action('match', (ctx) =>{
           }
         else if(result[0].score<0.50)
           {
-            ctx.telegram.sendMessage(ctx.chat.id, 'К сожалению, на данный момент нет совпадений.' + emoji.pensive,
+            ctx.telegram.sendMessage(ctx.chat.id, 'Sorry, there are no matches at this time.' + emoji.pensive,
             {
               reply_markup: {
                 inline_keyboard: [
@@ -1038,7 +1038,7 @@ bot.action('match_next1', (ctx) =>{
             else { age1 = "Under 18" }
             if(result[1].gender=="M"){gender1 = "Male"}
             else { gender1 = "Female" }
-            ctx.telegram.sendMessage(ctx.chat.id, emoji.green_book + emoji.closed_book + 'You have a match!! '+ emoji.closed_book + emoji.green_book + '\n\nYour match is @' + result[1].username +'  '+ emoji.arrow_left + emoji.arrow_left + '\nИмя: '+ result[1].name + '\nВозраст: '+ age1 +'\nПол: '+ gender1 +'\n Your matching score is: ' + scorepercentage + '%\n\n Нажмите на имя пользователя, чтобы начать беседу!',
+            ctx.telegram.sendMessage(ctx.chat.id, emoji.green_book + emoji.closed_book + 'You have a match!! '+ emoji.closed_book + emoji.green_book + '\n\nYour match is @' + result[1].username +'  '+ emoji.arrow_left + emoji.arrow_left + '\nИмя: '+ result[1].name + '\nВозраст: '+ age1 +'\nПол: '+ gender1 +'\n Your matching score is: ' + scorepercentage + '%\n\n Click on the username to start a conversation!',
             {
                 reply_markup: {
                 inline_keyboard: [
@@ -1083,7 +1083,7 @@ bot.action('match_next2', (ctx) =>{
             else { age1 = "Under 18" }
             if(result[2].gender=="M"){gender1 = "Male"}
             else { gender1 = "Female" }
-            ctx.telegram.sendMessage(ctx.chat.id, emoji.green_book + emoji.closed_book + 'You have a match!! '+ emoji.closed_book + emoji.green_book + '\n\nYour match is @' + result[2].username +'  '+ emoji.arrow_left + emoji.arrow_left + '\nИмя: '+ result[2].name + '\nВозраст: '+ age1 +'\nПол: '+ gender1 +'\n Your matching score is: ' + scorepercentage + '%\n\n Нажмите на имя пользователя, чтобы начать беседу!',
+            ctx.telegram.sendMessage(ctx.chat.id, emoji.green_book + emoji.closed_book + 'You have a match!! '+ emoji.closed_book + emoji.green_book + '\n\nYour match is @' + result[2].username +'  '+ emoji.arrow_left + emoji.arrow_left + '\nИмя: '+ result[2].name + '\nВозраст: '+ age1 +'\nПол: '+ gender1 +'\n Your matching score is: ' + scorepercentage + '%\n\n Click on the username to start a conversation!',
             {
                 reply_markup: {
                 inline_keyboard: [
@@ -1128,7 +1128,7 @@ bot.action('match_next3', (ctx) =>{
             else { age1 = "Under 18" }
             if(result[3].gender=="M"){gender1 = "Male"}
             else { gender1 = "Female" }
-            ctx.telegram.sendMessage(ctx.chat.id, emoji.green_book + emoji.closed_book + 'You have a match!! '+ emoji.closed_book + emoji.green_book + '\n\nYour match is @' + result[3].username +'  '+ emoji.arrow_left + emoji.arrow_left + '\nИмя: '+ result[3].name + '\nВозраст: '+ age1 +'\nПол: '+ gender1 +'\n Your matching score is: ' + scorepercentage + '%\n\n Нажмите на имя пользователя, чтобы начать беседу!',
+            ctx.telegram.sendMessage(ctx.chat.id, emoji.green_book + emoji.closed_book + 'You have a match!! '+ emoji.closed_book + emoji.green_book + '\n\nYour match is @' + result[3].username +'  '+ emoji.arrow_left + emoji.arrow_left + '\nИмя: '+ result[3].name + '\nВозраст: '+ age1 +'\nПол: '+ gender1 +'\n Your matching score is: ' + scorepercentage + '%\n\n Click on the username to start a conversation!',
             {
                 reply_markup: {
                 inline_keyboard: [
